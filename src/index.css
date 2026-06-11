@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--color-slate-950);
+  --color-accent: var(--color-indigo-600);
+  --color-background: var(--color-stone-50);
+  
+  --font-display: "Urbanist", "system-ui", sans-serif;
+  --font-body: "Urbanist", "system-ui", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-primary font-body antialiased selection:bg-accent selection:text-white;
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s infinite ease-in-out;
+}
