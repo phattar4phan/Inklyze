@@ -3,14 +3,14 @@ import { ScanText, Video, FileOutput, Zap } from 'lucide-react';
 
 const features = [
   {
-    title: "Intelligent OCR",
-    description: "Beyond text recognition. We capture the structure, the layout, and the soul of your writing.",
+    title: "Optical Character Recognition",
+    description: "Beyond text recognition. Create from sratch, compare with enterprise OCR model.",
     icon: ScanText,
     className: "md:col-span-2 md:row-span-2 bg-slate-900 text-white",
   },
   {
     title: "Live Vision",
-    description: "Auto-captures the perfect frame when stable content is detected.",
+    description: "Auto-captures the documents and create digital documents from them.",
     icon: Video,
     className: "md:col-span-1 md:row-span-1 bg-stone-100",
   },
@@ -22,7 +22,7 @@ const features = [
   },
   {
     title: "Stardance Optimized",
-    description: "Built for speed and precision during high-stakes hackathons.",
+    description: "Built for speed and precision for everybody who need live documents digitalizer.",
     icon: Zap,
     className: "md:col-span-1 md:row-span-1 bg-white border border-primary/5",
   },
