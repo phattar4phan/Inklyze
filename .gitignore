@@ -7,7 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Builds
 dist
 dist-ssr
 *.local
@@ -30,3 +30,7 @@ venv/
 
 # Environment variables
 .env
+
+# Not necessary
+data/
+node_modules
