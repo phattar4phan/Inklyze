@@ -34,3 +34,9 @@ venv/
 # Not necessary
 data/
 node_modules
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
