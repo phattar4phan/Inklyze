@@ -42,7 +42,7 @@
         shellHook = ''
           export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath runtimeLibs}:$LD_LIBRARY_PATH"
           export CUDA_PATH=${pkgs.cudaPackages.cudatoolkit}
-          export UV_PROJECT_ENVIRONMENT=env
+          export UV_PROJECT_ENVIRONMENT=./env/
           export LOCAL_FILES_SERVING_ENABLED=true
 
           if [ ! -d "env" ]; then
